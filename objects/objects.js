@@ -19,12 +19,55 @@
 
 //++++++++++++++++++++++++= conversion of array means any data retrived to be written in the form of array  ++++++++++++++++++
 
-console.log(Array.isArray("Rashmi"));
-console.log(Array.from("rashmi"));
-console.log(Array.from({name:"rashmi"})) /// gives the empty array as it requires  either key or value by which array is to be formed 
+// console.log(Array.isArray("Rashmi"));
+// console.log(Array.from("rashmi"));
+// console.log(Array.from({name:"rashmi"})) /// gives the empty array as it requires  either key or value by which array is to be formed 
   
-let score1=40;
-let score2=400;
-let score3=4000;
-let score4=40000;
-console.log(Array.of(score1,score2,score3,score4)); 
+// let score1=40;
+// let score2=400;
+// let score3=4000;
+// let score4=40000;
+// console.log(Array.of(score1,score2,score3,score4)); 
+
+
+
+
+
+//+++++++++++++++++++++++++++++++++++++OBJECTS +++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+const symbol=Symbol("key1")
+const userJS={
+     name: "Rashmi",
+     age:21,
+     [symbol]:"key1",
+     location:"kiet",
+     email:"rashmi@gmail.com",
+     isLoggedin: false,
+     lastLoginDays:["mondays", "saturdays"]
+}
+
+console.log(userJS["name"]) // way to access the object
+console.log(userJS["symbol"])
+
+
+//to change value of an object
+userJS.email="rashmi@yahoo.com"
+//to freeze values 
+// Object.freeze(userJS)    // the changes will not be made in the key given as it is freezed
+userJS.email="rashmi@microsoft.com"
+console.log(userJS);
+
+
+///+++++++++++++++++++++functions +++++++++++++++++++++++++++++
+
+userJS.greetings = function (){
+
+    console.log(`hello world! ,${this.age}`)
+
+}
+console.log(userJS.greetings());
+
+
+
+
+
