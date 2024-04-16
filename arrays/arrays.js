@@ -1,9 +1,9 @@
 // arrays
 
-// array is a collection of heterrogeenous data
-// and it is an object  ,, and is resizeable
+// array is a collection of heterogenous data
+// and it is an object  , and is resizeable
 // array make the shallow copies 
-// means when tthe changes are made in copied array then the changes will be reflected in original array
+// means when the changes are made in copied array then the changes will be reflected in original array
 
 
 // array methods 
