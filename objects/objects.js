@@ -68,6 +68,60 @@ userJS.greetings = function (){
 console.log(userJS.greetings());
 
 
+//+++++++++++++++++++++   object singleton or object constructor+++++++++
+
+
+const tinderUser ={}
+ tinderUser.id= "123abc"
+ tinderUser.name="rashmi"
+ tinderUser.isLoggedin= false
+
+ console.log(tinderUser);
+
+
+ const regularUser={
+      email:"rashmi@gmail.com",
+      fullname:{
+         userFullName:{
+            firstName:"rashmi",
+            lastName:"mishra"
+         }
+      }
+     
+ }
+
+ console.log(regularUser.fullname.userFullName.firstName)
+
+ ///+++++++++++combining objects++++++++++++++++++
+
+ const obj1={1:"a",2:"b"}
+ const obj2={3:"c",4:"d"}
+
+//  const obj3=Object.assign({},obj1,obj2); /// target={}
+const obj3={...obj1,...obj2} // spread operator 
+ console.log(obj3);
+
+ console.log(Object.keys(tinderUser));
+ console.log(Object.values(tinderUser));
+
+ console.log(tinderUser.hasOwnProperty('isLoggedin')) /// to serach weather that value exists or not
+
+////+++++++++++++++++++++++  destructring of objects ++++++++++++++
+
+const course ={
+      courseName:"DSA",
+      price:"999",
+      courseInstructor:"programmingpathshala"
+}
+
+
+const {courseInstructor:inst}=course
+
+console.log(inst);
+
+//+++++++++++++++++++++++++++++++++=APi's+++++++++++++++++++++=
+
+
 
 
 
