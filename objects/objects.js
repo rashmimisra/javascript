@@ -119,7 +119,7 @@ const {courseInstructor:inst}=course
 
 console.log(inst);
 
-//+++++++++++++++++++++++++++++++++=APi's+++++++++++++++++++++=
+
 
 
 
