@@ -36,33 +36,32 @@
 //  /// when no value is given then undefined is return
 
 
-function calculateCartPrice (...num1){   //...num1 rest operator 
-    return num1
+// function calculateCartPrice (...num1){   //...num1 rest operator 
+//     return num1
 
-}
-console.log(calculateCartPrice(200,400,500))
-
-
-const user ={
-        usernme:"rashmi",
-        price :199
-}
-
-function handleObject(anyobject){
-     console.log(`ussername is${anyobject.usernme} and the price is ${anyobject.price}`)
-
-}
-
-handleObject(user)
+// }
+// console.log(calculateCartPrice(200,400,500))
 
 
+// const user ={
+//         usernme:"rashmi",
+//         price :199
+// }
 
-const arr=[1,2,3,45,,5];
+// function handleObject(anyobject){
+//      console.log(`ussername is${anyobject.usernme} and the price is ${anyobject.price}`)
+
+// }
+
+// handleObject(user)
+
+
+
+// const arr=[1,2,3,45,,5];
  
-function arrayValue (getarray){
-    return console.log(` array is ${getarray[1]}`);
-}
-arrayValue(arr)
-
+// function arrayValue (getarray){
+//     return console.log(` array is ${getarray[1]}`);
+// }
+// arrayValue(arr)
 
 
