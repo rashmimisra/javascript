@@ -48,20 +48,20 @@
 //         price :199
 // }
 
-// function handleObject(anyobject){
-//      console.log(`ussername is${anyobject.usernme} and the price is ${anyobject.price}`)
+function handleObject(anyobject){
+     console.log(`ussername is${anyobject.usernme} and the price is ${anyobject.price}`)
 
-// }
+}
 
-// handleObject(user)
+handleObject(user)
 
 
 
-// const arr=[1,2,3,45,,5];
+const arr=[1,2,3,45,,5];
  
-// function arrayValue (getarray){
-//     return console.log(` array is ${getarray[1]}`);
-// }
-// arrayValue(arr)
+function arrayValue (getarray){
+    return console.log(` array is ${getarray[1]}`);
+}
+arrayValue(arr)
 
 
