@@ -101,11 +101,29 @@ if(true){
 // chai();
 
 
-const addTwo =(num1,num2) => num1+num2; // implicit return
-  console.log(addTwo(3,4));
+// const addTwo =(num1,num2) => num1+num2; // implicit return
+//   console.log(addTwo(3,4));
 
-  const object =()=>({username:"rashmi"}); // way to return an object implictly
-  console.log(object());
+//   const object =()=>({username:"rashmi"}); // way to return an object implictly
+//   console.log(object());
+
+
+
+  //+++++++++++++ immediately invoked function (iife)++++++++++++++
+
+  // to  connect the database as soon ass out application strats and not to let the variables of a subclasss function be effected by global variables
+
+// global scope se pollution hoti hai kai baar to us global scope ke pollution ko hataane ke liye hum iife function ka use karte hai
+
+ ( function chai (){   // names iffe
+    console.log("db connected ");
+                
+  })();
+  // iife dosen't know where to stop thus we use ;
+
+  ((name)=>{     //unnamed iffe
+     console.log(`db two connected name: ${name}`)
+  })('rashmi');
 
 
 
