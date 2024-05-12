@@ -123,7 +123,7 @@ if(true){
 
   ((name)=>{     //unnamed iffe
      console.log(`db two connected name: ${name}`)
-  })('rashmi');
+  })('rashmi'); 
 
 
 
